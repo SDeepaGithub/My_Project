@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title>
+            Student Form
+        </title>
+        <style>
+            table{
+                border: 1px solid black;
+                padding: 5px;
+                width: 250px;
+            }
+            td{
+                border: 1px solid black;
+              
+            }
+            .thead{
+                width:65px;
+                padding: 3px;
+                text-align: center;
+            }
+            .tData input{
+                width:200px;
+                padding: 3px;
+            }
+            
+            #container{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+     
+            .full-width-button {
+                width: 100%;
+                padding: 5px;
+                background-color: lightblue;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 2px;
+            }
+            .button-cell {
+                border: none;
+                padding: 5px 0;
+            }
+            #storeValue{
+                border: 1px solid black;
+                padding: 3px;
+                width: 550px;
+                max-width: 700px;
+            }
+
+            #valueContainer{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            #storeValue .thead{
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .valueContent{
+                border: 1px solid black;
+            }
+
+            .buttonData{
+                background-color: red;
+                padding: 3px;
+                border-radius: 2px;
+                margin-left: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>STUDENT FORM</h1>
+            <table>
+                <tr>
+                    <td class="tHead"><b>Name</b></td>
+                    <td class ="tData">
+                        <input type="text" placeholder="yousva" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tHead"><b>Age</b></td>
+                    <td class ="tData">
+                        <input type="number" id="age" placeholder="23">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tHead"><b>Gender</b></td>
+                    <td>
+                        <input type="radio" class="gender" value="Male">Male
+                        <input type="radio" class="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tHead"><b>Course</b></td>
+                    <td class ="tData">
+                        <input type="text" id="course" placeholder="computer Science">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tHead"><b>Email</b></td>
+                    <td class ="tData">
+                        <input type="text" id="Email" placeholder="aaa@gmail.com">
+                    </td>
+                </tr>             
+                <tr>
+                    <td class="button-cell" colspan="2">
+                        <button class="full-width-button" onclick="save()"><b>Save</b></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="valueContainer">
+            <h2 style="text-align: center;">Saved Data</h2>
+            <p>Below table store the data of the form if You don't need it you can delete it by click the delete button</p>
+            <table id="storeValue">
+                <tr>
+                    <td class="thead">Name</td>
+                    <td class="thead">Age</td>
+                    <td class="thead">Course</td>
+                    <td class="thead">Gender</td>
+                    <td class="thead" style="width: 130px;">Email</td>
+                    <td class="thead">Action</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script>
+        function save(){
+            var nameValue = document.querySelector("#container #name").value;
+            var tableRow = document.createElement("tr");
+            var tableData = document.createElement("td");
+            tableData.textContent = nameValue;
+            tableRow.append(tableData);   
+           
+            var ageValue = document.querySelector("#container #age").value;
+            var tableData2= document.createElement("td");
+            tableData2.textContent = nameValue;
+            tableRow.append(tableData2);   
+        
+            var genderValue = document.querySelector("#container .gender").value;
+            var tableData3= document.createElement("td");
+            tableData3.textContent = genderValue;
+            tableRow.append(tableData3);   
+           
+            var courseValue = document.querySelector("#container #course").value;
+            var tableData4= document.createElement("td");
+            tableData4.textContent = courseValue;
+            tableRow.append(tableData4);   
+
+            var emailValue = document.querySelector("#container #email").value;
+            var tableData5= document.createElement("td");
+            tableData5.textContent = emailValue;
+            tableRow.append(tableData5);   
+
+            var tableData6= document.createElement("td");
+            var buttonData = document.createElement("button");
+            buttonData.setAttribute("class","buttonData");
+            buttonData.setAttribute("onclick","deleteElement(event)");
+            buttonData.textContent = "Delete";
+            tableData6.append(buttonData);
+            tableRow.append(tableData6);
+
+
+            document.getElementById("storeValue").append(tableRow);
+            
+        }
+
+        function deleteElement(event){
+            console.log(event.target.parentElement.parentElement);
+            event.target.parentElement.parentElement.remove();
+        }
+    </script>
+</html>
