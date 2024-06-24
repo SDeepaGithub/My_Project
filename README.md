@@ -3,7 +3,7 @@ Project 1: CSS - Perfumy
       I have attached a preview of my first project in this repository, the Perfumy project, 
       which I completed entirely using HTML and CSS
       
-      Preview link : https://sdeepalakshmiproject.neocities.org/perfumy%20project/
+      Preview link : https://perfumywebsitebysdeepa.web.app/
       code link : /main/perfumy_project/index.html
 
 Project 2:Js - Student Form
