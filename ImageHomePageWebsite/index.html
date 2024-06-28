@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Website</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('https://cdn.pixabay.com/photo/2024/02/25/10/11/forsythia-8595521_1280.jpg') center/cover no-repeat;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100vh;
+    }
+   
+    .navbar {
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: Gray;
+      color: Blue;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+   
+    .text-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%; 
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      padding: 10px;
+    }
+   
+    .photo-gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .testimonial-section {
+      padding: 50px 0;
+    }
+    .testimonial-text {
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 50%;
+
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Photography Studio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero-section">
+    <div id="imageSlider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.pixabay.com/photo/2024/03/09/06/52/flowers-8622033_640.jpg" class="d-block w-100" class="d-block w-100" alt="Slide 1">
+          <div class="text-overlay">
+      <h2>Welcome to our Photography Studio</h2>
+    </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg" class="d-block w-100" class="d-block w-100" alt="Slide 2">
+          <div class="text-overlay">
+      <h2>Welcome to our Photography Studio</h2>
+    </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2024/02/16/16/39/flower-8577961_640.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="text-overlay">
+      <h2>Welcome to our Photography Studio</h2>
+    </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <section class="photo-gallery" style="margin:30px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_1280.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <img src="https://cdn.pixabay.com/photo/2023/10/30/05/19/sunflowers-8351807_1280.jpg" style="height: 100%;"alt="Gallery Image 2">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg" style="height: 100%; alt="Gallery Image 3">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="https://cdn.pixabay.com/photo/2024/01/19/18/00/hydrangeas-8519528_640.jpg" style="margin-top:10px;"alt="Gallery Image 4">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="https://cdn.pixabay.com/photo/2024/03/02/19/30/magnolia-8609277_640.jpg" style="margin-top:10px;" alt="Gallery Image 5">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="https://cdn.pixabay.com/photo/2024/02/05/18/01/grape-hyacinth-8555017_640.jpg" style="margin-top:10px;" alt="Gallery Image 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Slider Section -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="testimonial-text" style="justify-content: center;align-items: center;">
+                  <p>"The photography service provided by Photography Studio was exceptional. They captured every moment perfectly!"</p>
+                  <p class="testimonial-author">- John Doe</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2023/01/14/19/50/ai-generated-7718952_640.jpg" class="d-block w-100" alt="Testimonial Image">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="testimonial-text">
+                  <p>"I was amazed by the quality of the photos taken by Photography Studio. Highly recommended!"</p>
+                  <p class="testimonial-author">- Jane Smith</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2023/12/01/05/32/butterfly-8422900_640.jpg" class="d-block w-100" alt="Testimonial Image">
+              </div>
+            </div>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#testimonialSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+ <section>
+  <div class="container" style="background-color: gray;width: 100%; height: 30vh;margin-top: 20px; margin-bottom: 20px;display: flex; justify-content: center; align-items: center;">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div style="text-align: center;">
+          <p style="text-align: center;"><b>"Flowers, with their vibrant colors and delicate petals, have long been cherished for their beauty and symbolism. They play a significant role in various aspects of human life, from cultural celebrations to expressions of love and condolences. Beyond their aesthetic appeal, flowers also hold deep meanings across different cultures and traditions. They symbolize love, purity, gratitude, and renewal, among other sentiments. Whether adorning a wedding venue, brightening up a garden, or serving as a heartfelt gift, flowers have a timeless allure that continues to captivate people around the world."</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
