@@ -3,7 +3,7 @@
 ## Project 1: website - Receipe Website Development
 - **Description:** This is my project 1 which I completed entirely using HTML and CSS and JS.
 - **Preview Link:** [Recipe Website](https://sdeepalakshmiproject.neocities.org/HomePageImageWebsite/)
-- **Code Link:** [GitHub - Perfumy Project](https://github.com/SDeepaGithub/My_Project/tree/main/Receipe_Website_Development)
+- **Code Link:** [GitHub - Receipe Project](https://github.com/SDeepaGithub/My_Project/tree/main/Receipe_Website_Development)
 
 ## Project 2: JavaScript - Student Form
 - **Description:** A form that allows students to input their details. It is built using HTML, CSS, and JavaScript.
@@ -23,4 +23,9 @@
 ## Project 5: Html - Image website Development
 - **Description:** This is my project 5 which I completed entirely using HTML and CSS.
 - **Preview Link:** [Image Website](https://sdeepalakshmiproject.neocities.org/HomePageImageWebsite/)
-- **Code Link:** [GitHub - Perfumy Project](https://github.com/SDeepaGithub/My_Project/tree/main/ImageHomePageWebsite)
+- **Code Link:** [GitHub - Image Project](https://github.com/SDeepaGithub/My_Project/tree/main/ImageHomePageWebsite)
+
+## Project 6: Front End  - E-Commerce
+- **Description:** This is my project 6 which I completed entirely using front end.
+- **Preview Link:** [Ecommerce Website](https://e-web-bysdeepa.web.app/)
+- **Code Link:** [GitHub - Ecommerce](https://github.com/SDeepaGithub/My_Project/tree/main/E-Commerce_Website)
