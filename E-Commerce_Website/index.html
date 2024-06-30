@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <title>SDeepa Ecommerce Web</title>
+</head>
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<!--font Awesome icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="styleSheet" href="style.css">
+
+<body>
+    <nav class="navbar">
+        <h1>E-SDPA-WEB</h1>
+        <div class="navbar-collection">
+            <p class="nav-link"><a href="#">Home</a></p>
+            <p class="nav-link"><a href="#">About</a></p>
+            <p class="nav-link"><a href="#">Contact Us</a></p>
+        </div>
+
+        <!--Navbar icon for small screen-->
+        <div class="side-navbar-icon" onclick="showNavContent()">
+            <p>
+                <i class="fa-solid fa-sliders"></i>
+            </p>
+        </div>
+    </nav>
+
+    <div class="side-navbar-links">
+        <p style="display:block;text-align:right;">
+            <i style="cursor: pointer;" id="side-icon" class="fa-solid fa-xmark" onclick="closeNavContent()"></i>
+        </p>
+        <div class="side-navbar-collection">
+            <p class="side-nav-link"><a href="#">Home</a></p>
+            <p class="side-nav-link"><a href="#">About</a></p>
+            <p class="side-nav-link"><a href="#">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!--header section-->
+    <div class="header">
+        <div class="header-content-1">
+            <h1 style="font-size: 30px;font-weight: 400;">Level up your style</h1>
+            <p>with our stunning collection</p>
+            <button id="shop-button">Shop Now</button>
+        </div>
+        <div class="header-content-2">
+            <img style="padding:40px;"
+                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
+                width="300" height="300">
+        </div>
+    </div>
+
+    <!--Container-1-->
+    <div class="container-1">
+        <div class="container-one-head-one">
+            <h3>We Provide Best</h3>
+            <h3>Customer Experience</h3>
+        </div>
+        <div class="container-one-head-two">
+            <p style="padding-top: 35px;">|| we ensure thatour cusmoter have the best shopping experience</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="box-1">
+            <p class="box-icon"><i class="fa-sharp fa-regular fa-face-smile"></i></p>
+            <h4 style="font-weight: 100px;">Satisfaction Guarantee</h4>
+            <p>Fashion appears in clothing, footwear, accessories, makeup, hairstyles, lifestyle, and body proportions.
+                Furthermore, Fashion is an industry-supported expression. </p>
+        </div>
+        <div class="box-1">
+            <p class="box-icon"><i class="fa-sharp fa-regular fa-face-smile"></i></p>
+            <h4 style="font-weight: 100px;">New Arrival EveryDat</h4>
+            <p>Fashion appears in clothing, footwear, accessories, makeup, hairstyles, lifestyle, and body proportions.
+                Furthermore, Fashion is an industry-supported expression. </p>
+        </div>
+        <div class="box-1">
+            <p class="box-icon"><i class="fa-sharp fa-regular fa-face-smile"></i></p>
+            <h4 style="font-weight: 100px;">Fast and Free Shipping</h4>
+            <p>Fashion appears in clothing, footwear, accessories, makeup, hairstyles, lifestyle, and body proportions.
+                Furthermore, Fashion is an industry-supported expression. </p>
+        </div>
+    </div>
+
+    <!--New Arrival-->
+    <h2 style="padding-left: 10px;">New Arrival</h2>
+    <div>
+        <div class="new-arrival">
+            <div class="new-arrival-container">
+                <img class="new-arrival-image"
+                    src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D">
+                <button class="new-arrival-button">
+                    <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                            class="fas fa-long-arrow-right"></i></a></button>
+            </div>
+            <div class="new-arrival-container">
+                <img class="new-arrival-image"
+                    src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                <button class="new-arrival-button">
+                    <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                            class="fas fa-long-arrow-right"></i></a></button>
+            </div>
+            <div class="new-arrival-container">
+                <img class="new-arrival-image"
+                    src="https://plus.unsplash.com/premium_photo-1708337889349-6164efa8eaaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                <button class="new-arrival-button">
+                    <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                            class="fas fa-long-arrow-right"></i></a></button>
+            </div>
+            <div class="new-arrival-container">
+                <img class="new-arrival-image"
+                    src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                <button class="new-arrival-button">
+                    <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                            class="fas fa-long-arrow-right"></i></a></button>
+            </div>
+        </div>
+
+        <!--Most wanted-->
+        <h2 style="padding-left: 10px;">Most Wanted</h2>
+        <div>
+            <div class="new-arrival">
+                <div class="new-arrival-container">
+                    <img class="new-arrival-image"
+                        src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D">
+                    <button class="new-arrival-button">
+                        <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                                class="fas fa-long-arrow-right"></i></a></button>
+                </div>
+                <div class="new-arrival-container">
+                    <img class="new-arrival-image"
+                        src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                    <button class="new-arrival-button">
+                        <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                                class="fas fa-long-arrow-right"></i></a></button>
+                </div>
+                <div class="new-arrival-container">
+                    <img class="new-arrival-image"
+                        src="https://plus.unsplash.com/premium_photo-1708337889349-6164efa8eaaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                    <button class="new-arrival-button">
+                        <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                                class="fas fa-long-arrow-right"></i></a></button>
+                </div>
+                <div class="new-arrival-container">
+                    <img class="new-arrival-image"
+                        src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                    <button class="new-arrival-button">
+                        <a href="https://www.myntra.com/" target="_blank"> Shop Now <i
+                                class="fas fa-long-arrow-right"></i></a></button>
+                </div>
+            </div>
+
+            <!--news secton-->
+            <div class="news">
+                <h2>Join our News Letter</h2>
+                <p>Signup for our email newsLetter</p>
+                <div>
+                    <input type="text" class="search">
+                </div>
+                <div>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-box-1">
+                        <h2 class="headingText">E-SDPA-WEB</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sapiente neque aliquam nulla ad fugit, odit officia incidunt vitae harum ipsa cumque? Explicabo pariatur est tenetur minus cum eligendi tempora?</p>
+                        <div class="footer-icon-container">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>@E-SDPA-WEB.com</p>
+            </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
