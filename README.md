@@ -2,7 +2,7 @@
 
 ## Project 1: website - Receipe Website Development
 - **Description:** This is my project 1 which I completed entirely using HTML and CSS and JS.
-- **Preview Link:** [Recipe Website](https://sdeepalakshmiproject.neocities.org/HomePageImageWebsite/)
+- **Preview Link:** [Recipe Website](https://sdeepalakshmiproject.neocities.org/RecipeWebsiteDevelopment/)
 - **Code Link:** [GitHub - Receipe Project](https://github.com/SDeepaGithub/My_Project/tree/main/Receipe_Website_Development)
 
 ## Project 2: JavaScript - Student Form
